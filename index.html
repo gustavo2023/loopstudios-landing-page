@@ -63,7 +63,7 @@
           ><img
             src="./images/logo.svg"
             alt="Loopstudios logo"
-            class="main-header__logo"
+            class="sidebar-nav__logo"
         /></a>
 
         <button
@@ -73,7 +73,7 @@
           <img
             src="./images/icon-close.svg"
             alt="Close icon"
-            class="sidebar__close-icon"
+            class="sidebar-nav__close-icon"
           />
         </button>
       </div>
@@ -131,16 +131,193 @@
         <div class="our-creations__header">
           <h2 class="our-creations__title">OUR CREATIONS</h2>
           <a
+            href="#"
             class="our-creations__see-all-link our-creations__see-all-link--desktop"
           >
             SEE ALL
           </a>
         </div>
 
-        <div class="our-creations__grid">
-          <a href="#" class="our-creations__item"> DEEP EARTH </a>
-        </div>
+        <ul class="our-creations__grid">
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-deep-earth.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-deep-earth.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-deep-earth.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">Deep Earth</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-night-arcade.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-night-arcade.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-night-arcade.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">Night Arcade</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-soccer-team.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-soccer-team.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-soccer-team.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">Soccer Team VR</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-grid.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-grid.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-grid.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">The Grid</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-from-above.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-from-above.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-from-above.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">From Up Above VR</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-pocket-borealis.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-pocket-borealis.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-pocket-borealis.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">Pocket Borealis</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-curiosity.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-curiosity.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-curiosity.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">The Curiosity</h3>
+              </div>
+            </a>
+          </li>
+          <li class="creation-card">
+            <a href="#" class="creation-card__link">
+              <picture>
+                <source
+                  srcset="./images/mobile/image-fisheye.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/desktop/image-fisheye.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/desktop/image-fisheye.jpg"
+                  alt=""
+                  class="creation-card__image"
+                />
+              </picture>
+              <div class="creation-card__caption">
+                <h3 class="creation-card__title">Make It Fisheye</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
         <a
+          href="#"
           class="our-creations__see-all-link our-creations__see-all-link--mobile"
         >
           SEE ALL
