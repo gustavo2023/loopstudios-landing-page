@@ -22,8 +22,8 @@
             alt="Loopstudios logo"
             class="main-header__logo"
         /></a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
+        <nav class="main-nav" aria-labelledby="primary-navigation">
+          <ul class="main-nav__list" id="primary-navigation">
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">About</a>
             </li>
@@ -324,6 +324,67 @@
         </a>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <img
+        src="./images/logo.svg"
+        alt="Loopstudios logo"
+        class="footer__logo"
+      />
+      <nav class="footer-nav" aria-labelledby="footer-navigation">
+        <ul class="footer-nav__list" id="footer-navigation">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Careers</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Events</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Products</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Support</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav__social-list">
+          <li class="footer-nav__social-item">
+            <a href="#" class="footer-nav__social-link"
+              ><img
+                src="./images/icon-facebook.svg"
+                alt="Facebook icon"
+                class="footer-nav__social-icon"
+            /></a>
+          </li>
+          <li class="footer-nav__social-item">
+            <a href="#" class="footer-nav__social-link"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="Twitter icon"
+                class="footer-nav__social-icon"
+            /></a>
+          </li>
+          <li class="footer-nav__social-item">
+            <a href="#" class="footer-nav__social-link"
+              ><img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest icon"
+                class="footer-nav__social-icon"
+            /></a>
+          </li>
+          <li class="footer-nav__social-item">
+            <a href="#" class="footer-nav__social-link"
+              ><img
+                src="./images/icon-instagram.svg"
+                alt="Instagram icon"
+                class="footer-nav__social-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer__copyright">© 2021 Loopstudios. All rights reserved.</p>
+    </footer>
   </body>
 </html>
