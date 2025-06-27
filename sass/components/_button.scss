@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+.button {
+  display: inline-block;
+  padding: var(--space-300) var(--space-600);
+  border: 1px solid var(--clr-black);
+  background-color: transparent;
+  color: var(--clr-black);
+  font-family: var(--ff-headings);
+  font-size: var(--fs-body);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+  }
+}
