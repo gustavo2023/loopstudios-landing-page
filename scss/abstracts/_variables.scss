@@ -1,0 +1,75 @@
+// Colors
+$clr-white: hsl(0, 0%, 100%); // #FFFFFF
+$clr-black: hsl(0, 0%, 0%); // #000000
+
+$clr-grey-200: hsl(0, 0%, 85%);
+$clr-dark-gray: hsl(0, 0%, 41%);
+$clr-very-dark-gray: hsl(0, 0%, 25%);
+
+$clr-blue-100: hsl(215, 30%, 92%);
+$clr-blue-50: hsl(213, 100%, 98%);
+
+$gradient-start: hsl(0, 0%, 0%);
+$gradient-end: hsla(0, 0%, 0%, 0.6);
+
+$clr-primary-text: $clr-white;
+$clr-secondary-text: $clr-dark-gray;
+
+// Spacing
+$spacing-0: 0rem;
+$spacing-100: 0.5rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$spacing-600: 3rem;
+$spacing-800: 4rem;
+$spacing-1000: 5rem;
+
+// sass/abstracts/_variables.scss (continued)
+
+// Fonts (No change)
+$ff-josefin-sans: "Josefin Sans", sans-serif;
+$ff-alata: "Alata", sans-serif;
+
+// Font Weights (No change)
+$fw-light: 300;
+$fw-regular: 400;
+$fw-normal: 400;
+$fw-semibold: 600;
+
+// Font Sizes & Line Heights
+// Text Preset 1
+$fs-h1-desktop: 4.5rem;
+$lh-h1-desktop: 1;
+$ls-h1-desktop: 0;
+
+// Text Preset 2
+$fs-h1-mobile: 3rem;
+$lh-h1-mobile: 1;
+$ls-h1-mobile: 0;
+
+// Text Preset 3
+$fs-h2-desktop: 2.5rem;
+$lh-h2-desktop: 1;
+$ls-h2-desktop: 0;
+
+// Text Preset 4
+$fs-h3: 1.5rem;
+$lh-h3: 1;
+$ls-h3: 0;
+
+// Text Preset 5
+$fs-h5: 1.125rem;
+$lh-h5: 1;
+$ls-h5: 0;
+
+// Text Preset 6
+$fs-body: 0.9375rem;
+$lh-body: 1.6;
+$ls-body: 0;
+
+// Text Preset 7
+$fs-small: 0.8125rem;
+$lh-small: 1.6;
+$ls-small: 0;
