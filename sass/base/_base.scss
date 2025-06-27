@@ -38,4 +38,9 @@ body {
   color: var(--clr-black);
   background-color: var(--clr-white);
   line-height: $lh-body;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
 }
