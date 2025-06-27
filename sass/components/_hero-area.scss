@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero-area {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: $spacing-800 $spacing-300;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @include for-tablet-up {
+    background-image: url("../../images/desktop/image-hero.jpg");
+    padding: $spacing-800 $spacing-1000;
+    justify-content: flex-start;
+  }
+
+  &__content {
+    @include for-tablet-up {
+      max-width: 50%;
+    }
+  }
+
+  &__title {
+    border: 2px solid $clr-white;
+    padding: $spacing-300;
+    font-size: $fs-h1-mobile;
+    line-height: $lh-h1-mobile;
+    color: $clr-white;
+    text-transform: uppercase;
+    font-weight: $fw-light;
+
+    @include for-tablet-up {
+      font-size: $fs-h1-desktop;
+      line-height: $lh-h1-desktop;
+      padding: $spacing-500;
+      max-width: 650px; // To match the design
+    }
+  }
+}
