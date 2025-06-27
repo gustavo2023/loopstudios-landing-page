@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.main-nav {
+  display: none; // Hidden on mobile by default
+
+  @include for-tablet-up {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    gap: $spacing-400;
+  }
+
+  &__link {
+    font-family: $ff-alata;
+    font-size: $fs-body;
+    color: $clr-white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: $spacing-100;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: $clr-white;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      width: 50%;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $clr-white;
+      outline-offset: 4px;
+    }
+  }
+}
