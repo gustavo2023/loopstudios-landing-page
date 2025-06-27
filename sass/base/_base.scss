@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+:root {
+  // Colors
+  --clr-white: #{$clr-white};
+  --clr-black: #{$clr-black};
+  --clr-dark-gray: #{$clr-dark-gray};
+  --clr-very-dark-gray: #{$clr-very-dark-gray};
+
+  // Typography
+  --ff-body: #{$ff-alata};
+  --ff-headings: #{$ff-josefin-sans};
+
+  --fw-light: #{$fw-light};
+  --fw-regular: #{$fw-regular};
+
+  --fs-body: #{$fs-body};
+  --fs-h1: #{$fs-h1-mobile};
+  --fs-h2: #{$fs-h2-desktop};
+  --fs-h3: #{$fs-h3};
+
+  // Spacing
+  --space-300: #{$spacing-300};
+  --space-400: #{$spacing-400};
+  --space-500: #{$spacing-500};
+  --space-600: #{$spacing-600};
+  --space-800: #{$spacing-800};
+
+  @include for-desktop-up {
+    --fs-h1: #{$fs-h1-desktop};
+  }
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  line-height: $lh-body;
+}
