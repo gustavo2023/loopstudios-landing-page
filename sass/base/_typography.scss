@@ -3,22 +3,22 @@
 h1,
 h2,
 h3 {
-  font-family: var(--ff-secondary);
-  font-weight: var(--fw-light);
+  font-family: $ff-alata;
+  font-weight: $fw-light;
   text-transform: uppercase;
-  color: var(--clr-primary-white);
+  color: $clr-white;
 }
 
 h1 {
-  font-size: var(--fs-h1);
+  font-size: $fs-h1-mobile;
 }
 
 h2 {
-  font-size: var(--fs-h2);
+  font-size: $fs-h2-desktop;
 }
 
 h3 {
-  font-size: var(--fs-h3);
+  font-size: $fs-h3;
 }
 
 p {
