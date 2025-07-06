@@ -2,42 +2,18 @@
 @use "../abstracts/mixins" as *;
 
 .main-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: $spacing-400 $spacing-300;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 10;
-
-  @include for-tablet-up {
-    padding: $spacing-800 $spacing-1000;
-  }
-
-  &__logo-link {
-    z-index: 11; // Ensure logo is above sidebar when it opens
-  }
-
-  &__logo {
-    width: 12rem;
-  }
+  justify-content: space-between;
+  width: 100%;
 
   &__menu-toggle {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
-    z-index: 11; // Ensure toggle is above sidebar
 
-    @include for-tablet-up {
+    @include for-desktop-up {
       display: none;
     }
-  }
-
-  &__menu-icon {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 }
