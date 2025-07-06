@@ -19,11 +19,18 @@
   }
 
   &__content {
+    width: 100%;
     flex-shrink: 0;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include for-desktop-up {
+      align-self: flex-start;
+      max-width: 650px;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
