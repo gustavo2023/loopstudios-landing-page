@@ -18,6 +18,10 @@
     padding: $spacing-800 $spacing-1000;
   }
 
+  @include for-desktop-up {
+    background-image: url("../../images/desktop/image-hero.jpg");
+  }
+
   &__content {
     width: 100%;
     flex-shrink: 0;
