@@ -5,6 +5,10 @@
   display: none; // Hidden on mobile by default
 
   @include for-tablet-up {
+    display: none;
+  }
+
+  @include for-desktop-up {
     display: block;
   }
 
