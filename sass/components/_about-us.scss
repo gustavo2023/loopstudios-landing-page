@@ -9,15 +9,20 @@
   text-align: center;
 
   @include for-tablet-up {
+    padding: 0 $spacing-1000;
+  }
+
+  @include for-desktop-up {
     position: relative;
-    padding: $spacing-1000 $spacing-1000;
+    padding: $spacing-1000 $spacing-1000 $spacing-1000 0;
+    margin-right: 8rem;
     text-align: left;
   }
 
   &__image-wrapper {
     margin-bottom: $spacing-500;
 
-    @include for-tablet-up {
+    @include for-desktop-up {
       margin-bottom: 0;
       flex-basis: 60%;
     }
@@ -26,13 +31,13 @@
   &__content {
     padding: 0 $spacing-300;
 
-    @include for-tablet-up {
+    @include for-desktop-up {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 5rem;
+      right: -10rem;
       background-color: $clr-white;
-      padding: $spacing-800 $spacing-800 0 $spacing-800;
-      width: 50%;
+      padding: $spacing-800 0 0 $spacing-800;
+      width: 60%;
       max-width: 540px;
     }
   }
@@ -41,6 +46,14 @@
     font-size: 2rem;
     color: $clr-black;
     margin-bottom: $spacing-200;
+
+    @include for-tablet-up {
+      font-size: $fs-h1-mobile;
+    }
+
+    @include for-desktop-up {
+      font-size: $fs-h1-mobile;
+    }
   }
 
   &__description {
@@ -48,5 +61,6 @@
     color: $clr-dark-gray;
     line-height: $lh-body;
     font-weight: $fw-normal;
+    text-wrap: wrap;
   }
 }
