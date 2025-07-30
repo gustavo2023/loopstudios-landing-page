@@ -20,6 +20,7 @@
 
   @include for-desktop-up {
     background-image: url("../images/desktop/image-hero.jpg");
+    padding: $spacing-600 $spacing-1000;
   }
 
   &__content {
