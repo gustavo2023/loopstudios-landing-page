@@ -5,7 +5,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  color: var(--clr-white);
+  color: $clr-white;
   text-decoration: none;
 
   &::before {
@@ -28,7 +28,7 @@
 
   &:hover .creation-card__title,
   &:focus-visible .creation-card__title {
-    color: var(--clr-black);
+    color: $clr-black;
   }
 
   &:hover .creation-card__image,
@@ -47,22 +47,19 @@
 
   &__title {
     position: absolute;
-    bottom: var(--space-400);
-    left: var(--space-400);
-    right: var(--space-400);
+    bottom: $spacing-400;
+    left: $spacing-400;
+    right: $spacing-400;
     z-index: 2;
-    font-family: var(--ff-headings);
-    font-size: var(--fs-h3);
-    font-weight: var(--fw-light);
     text-transform: uppercase;
     line-height: 1.1;
-    max-width: 15ch;
+    max-width: 9ch;
     transition: color 0.3s ease-in-out;
 
     @include for-desktop-up {
-      bottom: var(--space-500);
-      left: var(--space-500);
-      font-size: var(--fs-h2);
+      bottom: $spacing-500;
+      left: $spacing-500;
+      font-size: 2rem;
     }
   }
 }
