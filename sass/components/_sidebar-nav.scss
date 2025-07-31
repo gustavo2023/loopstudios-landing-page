@@ -59,4 +59,8 @@
       text-decoration: underline;
     }
   }
+
+  @include for-desktop-up {
+    display: none;
+  }
 }
