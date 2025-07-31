@@ -9,10 +9,18 @@
     align-items: center;
     margin-bottom: $spacing-600;
 
+    .button {
+      display: none;
+    }
+
     @include for-desktop-up {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: $spacing-800;
+
+      .button {
+        display: flex;
+      }
     }
   }
 
@@ -20,6 +28,14 @@
     font-size: 2rem;
     text-transform: uppercase;
     color: $clr-black;
+
+    @include for-tablet-up {
+      font-size: $fs-h1-mobile;
+    }
+
+    @include for-desktop-up {
+      font-size: $fs-h1-mobile;
+    }
   }
 
   &__grid {
