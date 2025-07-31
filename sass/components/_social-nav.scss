@@ -15,14 +15,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: background 0.2s, box-shadow 0.2s;
     padding: $spacing-100;
     outline: none;
+    transition: box-shadow 0.2s ease-in-out;
 
-    &:hover,
     &:focus-visible {
-      background: $clr-grey-200;
-      box-shadow: 0 0 0 2px $clr-dark-gray;
+      box-shadow: 0 0 0 2px $clr-white;
     }
   }
 
@@ -31,11 +29,5 @@
     height: 1.5rem;
     display: block;
     filter: brightness(0) invert(1);
-    transition: filter 0.2s;
-
-    .social-nav__link:hover &,
-    .social-nav__link:focus-visible & {
-      filter: brightness(0) invert(0.5) sepia(1) saturate(5) hue-rotate(180deg);
-    }
   }
 }
