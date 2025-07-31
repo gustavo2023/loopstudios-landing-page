@@ -1,42 +1,36 @@
 @use "../abstracts/mixins" as *;
 
 .our-creations {
-  padding-block: var(--space-800);
+  padding-block: $spacing-800;
 
   &__header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: var(--space-600);
+    margin-bottom: $spacing-600;
 
     @include for-desktop-up {
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: var(--space-800);
+      margin-bottom: $spacing-800;
     }
   }
 
   &__title {
-    font-family: var(--ff-headings);
-    font-size: var(--fs-h2);
-    font-weight: var(--fw-light);
+    font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: var(--space-500);
-
-    @include for-desktop-up {
-      margin-bottom: 0;
-    }
+    color: $clr-black;
   }
 
   &__grid {
     display: grid;
-    gap: var(--space-400);
-    margin-bottom: var(--space-500);
+    gap: $spacing-400;
+    margin-bottom: $spacing-500;
 
     @include for-desktop-up {
       grid-template-columns: repeat(4, 1fr);
-      gap: var(--space-500);
-      margin-bottom: var(--space-800);
+      gap: $spacing-500;
+      margin-bottom: $spacing-800;
     }
   }
 

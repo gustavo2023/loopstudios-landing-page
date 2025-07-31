@@ -2,12 +2,11 @@
 
 .button {
   display: inline-block;
-  padding: var(--space-300) var(--space-600);
-  border: 1px solid var(--clr-black);
+  padding: $spacing-300 $spacing-600;
+  border: 1px solid $clr-black;
   background-color: transparent;
-  color: var(--clr-black);
-  font-family: var(--ff-headings);
-  font-size: var(--fs-body);
+  color: $clr-black;
+  font-size: $fs-body;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-decoration: none;
@@ -15,7 +14,7 @@
 
   &:hover,
   &:focus-visible {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
+    background-color: $clr-black;
+    color: $clr-white;
   }
 }
