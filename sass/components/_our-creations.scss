@@ -48,6 +48,10 @@
     padding: 0 $spacing-300;
     margin-bottom: $spacing-500;
 
+    @include for-tablet-up {
+      padding: 0 $spacing-1000;
+    }
+
     @include for-desktop-up {
       grid-template-columns: repeat(4, 1fr);
       gap: $spacing-400;
