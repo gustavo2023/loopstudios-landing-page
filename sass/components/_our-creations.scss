@@ -44,12 +44,14 @@
 
   &__grid {
     display: grid;
-    gap: $spacing-400;
+    gap: $spacing-300;
+    padding: 0 $spacing-300;
     margin-bottom: $spacing-500;
 
     @include for-desktop-up {
       grid-template-columns: repeat(4, 1fr);
-      gap: $spacing-500;
+      gap: $spacing-400;
+      padding: 0;
       margin-bottom: $spacing-800;
     }
   }
