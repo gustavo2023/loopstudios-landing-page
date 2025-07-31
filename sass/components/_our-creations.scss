@@ -13,10 +13,14 @@
       display: none;
     }
 
+    @include for-tablet-up {
+      margin-bottom: $spacing-400;
+    }
+
     @include for-desktop-up {
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: $spacing-800;
+      margin-bottom: $spacing-1000;
 
       .button {
         display: flex;
