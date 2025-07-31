@@ -39,18 +39,3 @@
     }
   }
 }
-
-// Responsive alignment for mobile
-.footer__social-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: $spacing-200;
-
-  @include for-tablet-up {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: $spacing-400;
-  }
-}

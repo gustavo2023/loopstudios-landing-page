@@ -2,11 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
+  width: 100%;
   background-color: $clr-black;
   color: $clr-white;
   padding: $spacing-800 $spacing-300;
 
-  @include for-tablet-up {
+  @include for-desktop-up {
     padding: $spacing-500 $spacing-1000;
   }
 
@@ -20,6 +21,11 @@
       flex-direction: row;
       justify-content: space-between;
     }
+
+    @include for-desktop-up {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__nav-wrapper {
@@ -29,6 +35,10 @@
     gap: $spacing-400;
 
     @include for-tablet-up {
+      align-items: flex-start;
+    }
+
+    @include for-desktop-up {
       align-items: flex-start;
     }
   }
@@ -45,6 +55,11 @@
       gap: $spacing-300;
 
       @include for-tablet-up {
+        flex-direction: row;
+        gap: $spacing-400;
+      }
+
+      @include for-desktop-up {
         flex-direction: row;
         gap: $spacing-400;
       }
@@ -89,6 +104,10 @@
     gap: $spacing-300;
 
     @include for-tablet-up {
+      align-items: flex-end;
+    }
+
+    @include for-desktop-up{
       align-items: flex-end;
     }
   }
